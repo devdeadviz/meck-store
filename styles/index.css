@@ -31,7 +31,7 @@ body {
 
 .store-image-content {
     position: absolute;
-    top: 20rem;
+    top: 40%;
     left: 35%;
     align-items: center;
 }
@@ -42,12 +42,25 @@ body {
 }
 
 .store-heading {
-    margin: 5rem 0;
+    margin: 5rem 2rem;
 }
 
 .vertical-card-wrapper {
+    height: fit-content;
+    width: 22rem;
     border-radius: 10px;
     box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.19);
+}
+
+.vertical-card-wrapper:hover {
+    cursor: pointer;
+}
+
+.responsive-image {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    aspect-ratio: 5/3;
 }
 
 .vertical-card-badge-wrapper {
@@ -62,6 +75,11 @@ body {
 .horizontal-card-wrapper {
     box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.22);
     border-radius: 10px;
+    height: fit-content;
+}
+
+.horizontal-card-wrapper:hover {
+    cursor: pointer;
 }
 
 .wishlist-btn {
@@ -69,12 +87,11 @@ body {
 }
 
 .store-footer {
-    clear: both;
     position: relative;
-    height: 50px;
-    margin-top: 2rem;
+    bottom: 0;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
