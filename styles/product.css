@@ -1,0 +1,103 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+body {
+  color: var(--primary-color);
+  font-family: "Merriweather", serif;
+  scroll-behavior: smooth;
+}
+
+/* login button style */
+
+.btn-dark:hover {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.icon-count-sm {
+  top: -0.7rem;
+  left: 2.8rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+/* store section styyles */
+
+.store-section {
+  padding-top: 4.6rem;
+}
+
+/* filter styles */
+
+.store-filter {
+  border-right: 2px solid var(--primary-color);
+  flex-basis: 45rem;
+  padding: 2.2rem;
+}
+
+.clear-btn {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.clear-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.filter-slider {
+  width: 100%;
+}
+
+/* product section styles */
+
+.store-product {
+  padding: 2.2rem;
+  flex-grow: 1;
+}
+
+/* vertical card styles */
+
+.vertical-card-wrapper {
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.19);
+  margin: 1rem;
+}
+
+.vertical-card-wrapper:hover {
+  cursor: pointer;
+}
+
+.responsive-image {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  aspect-ratio: 5/3;
+}
+
+.vertical-card-badge-wrapper {
+  border-radius: 10px;
+}
+
+.add-btn {
+  font-size: 0.9rem;
+  width: 95%;
+  border-radius: 5px;
+}
+
+/* hiding scrollbar style */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 1016px) {
+  .store-filter {
+    display: none;
+  }
+}
