@@ -1,351 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Kuldeep Gupta" />
-    <meta name="description" content="Meck Store is a mechanical keyboards store." />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://arcui.netlify.app/styles/components.css" />
-    <link rel="stylesheet" href="https://arcui.netlify.app/styles/typography.css" />
-    <link rel="stylesheet" href="https://arcui.netlify.app/styles/flex.css" />
-    <link rel="stylesheet" href="https://arcui.netlify.app/styles/margin.css" />
-    <link rel="stylesheet" href="https://arcui.netlify.app/styles/padding.css" />
-    <link rel="stylesheet" href="../styles/product.css" />
-    <title>Product Page</title>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Kuldeep Gupta" />
+  <meta name="description" content="Meck Store is a mechanical keyboards store." />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/components.css" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/typography.css" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/flex.css" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/margin.css" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/padding.css" />
+  <link rel="stylesheet" href="../styles/product.css" />
+  <title>Product Page</title>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <header class="header">
-        <div class="header-wrapper mt-2 ml-4">
-            <!-- <img class="logo" src="#" alt="" /> -->
-            <h6>
-                <a class="header-heading" href="#">Meck Store</a>
-            </h6>
-        </div>
-        <div class="header__nav">
-            <nav>
-                <ul class="flex flexAlignItemsCenter">
-                    <li>
-                        <button type="button" class="btn btn-dark my-2 p-2 fs-6">
-                            Login
-                        </button>
-                    </li>
-                    <li>
-                        <a class="social-icons-wrapper pos-rel" href="#">
-                            <i class="fas fa-heart"></i>
-                            <span class="badge-count icon-count-sm">8</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-icons-wrapper pos-rel" href="#">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="badge-count icon-count-sm">8</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section class="store-section flex">
-        <section class="store-filter">
-            <div class="filter-header flex flexAlignContentCenter flexJustifyBetween">
-                <h3 class="filter-heading">Filters</h3>
-                <button type="button" class="btn btn-outline-dark clear-btn">
-                    Clear
-                </button>
-            </div>
-            <div class="filter-price my-5">
-                <h3 class="filter-heading">Price</h3>
-                <input class="filter-slider my-4" type="range" min="1" max="100" value="50" />
-            </div>
-            <div class="filter-category">
-                <h3 class="filter-heading">Category</h3>
-                <form action="#">
-                    <input class="my-3" type="checkbox" id="keyboard1" name="keyboard" value="StandardKeyboard" />
-                    <label for="keyboard1"> Standard Keyboard</label><br />
-                    <input class="my-3" type="checkbox" id="keyboard2" name="keyboard" value="SplitKeyboard" />
-                    <label for="keyboard2"> Split Keyboard</label><br />
-                    <input class="my-3" type="checkbox" id="keyboard3" name="keyboard" value="CustomKeyboard" />
-                    <label for="keyboard3"> Custom Keyboard</label><br /><br />
-                </form>
-            </div>
-            <div class="filter-rating">
-                <h3 class="filter-heading">Rating</h3>
-                <form action="#">
-                    <input class="my-3" type="radio" id="rating1" name="rating" value="4starandabove" />
-                    <label for="rating1">4 Stars & above</label><br />
-                    <input class="my-3" type="radio" id="rating2" name="rating" value="3starandabove" />
-                    <label for="rating2">3 Stars & above</label><br />
-                    <input class="mt-2" type="radio" id="rating3" name="rating" value="2starandabove" />
-                    <label for="rating3">2 Stars & above</label><br /><br />
-                    <input type="radio" id="rating4" name="rating" value="1starandabove" />
-                    <label for="rating4">1 Stars & above</label><br /><br />
-                </form>
-            </div>
-            <div class="filter-sort-by">
-                <h3 class="filter-heading">Rating</h3>
-                <form action="#">
-                    <input class="my-3" type="radio" id="price-sort-1" name="sortby" value="lowtohigh" />
-                    <label for="price-sort-1">Price - Low to High</label><br />
-                    <input class="my-3" type="radio" id="price-sort-2" name="sortby" value="hightolow" />
-                    <label for="price-sort-2">Price - High to Low</label><br />
-                </form>
-            </div>
-        </section>
-        <section class="store-product">
-            <div class="product-header">
-                <h3 class="product-heading">Showing All Products <small>( Showing 20 products )</small> </h3>
-            </div>
-            <div class="product-card-wrapper flex flexWrap">
-                <div class="vertical-card-wrapper">
-                    <div class="vertical-card-image-wrapper">
-                      <img
-                        class="responsive-image"
-                        src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300whttps://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300w"
-                        alt="Keyboard image"
-                      />
-                    </div>
-                    <div class="vertical-card-header">
-                      <h2 class="m-2">Compact Keyboards</h2>
-                    </div>
-                    <div class="vertical-card-body my-4 mx-2">
-                      <div class="vertical-card-price-wrapper mt-2">
-                        <div class="mb-4">
-                          <span class="product-discount-price">Rs. 7,999.00</span>
-                          <span class="product-original-price ml-5">Rs. 9,438.82</span>
-                        </div>
-                        <span class="product-discount">Save 18%</span>
-                      </div>
-                    </div>
-                    <div class="vertical-card-footer">
-                      <button type="button" class="btn btn-primary add-btn my-4 mx-2">
-                        <i class="fas fa-shopping-cart mr-2"></i>
-                        Add to Cart
-                      </button>
-                    </div>
-                </div>
-                <div class="vertical-card-wrapper">
-                    <div class="vertical-card-image-wrapper">
-                      <img
-                        class="responsive-image"
-                        src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300whttps://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300w"
-                        alt="Keyboard image"
-                      />
-                    </div>
-                    <div class="vertical-card-header">
-                      <h2 class="m-2">Compact Keyboards</h2>
-                    </div>
-                    <div class="vertical-card-body my-4 mx-2">
-                      <div class="vertical-card-price-wrapper mt-2">
-                        <div class="mb-4">
-                          <span class="product-discount-price">Rs. 7,999.00</span>
-                          <span class="product-original-price ml-5">Rs. 9,438.82</span>
-                        </div>
-                        <span class="product-discount">Save 18%</span>
-                      </div>
-                    </div>
-                    <div class="vertical-card-footer">
-                      <button type="button" class="btn btn-primary add-btn my-4 mx-2">
-                        <i class="fas fa-shopping-cart mr-2"></i>
-                        Add to Cart
-                      </button>
-                    </div>
-                </div>
-                <div class="vertical-card-wrapper">
-                    <div class="vertical-card-image-wrapper">
-                      <img
-                        class="responsive-image"
-                        src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300whttps://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300w"
-                        alt="Keyboard image"
-                      />
-                    </div>
-                    <div class="vertical-card-header">
-                      <h2 class="m-2">Compact Keyboards</h2>
-                    </div>
-                    <div class="vertical-card-body my-4 mx-2">
-                      <div class="vertical-card-price-wrapper mt-2">
-                        <div class="mb-4">
-                          <span class="product-discount-price">Rs. 7,999.00</span>
-                          <span class="product-original-price ml-5">Rs. 9,438.82</span>
-                        </div>
-                        <span class="product-discount">Save 18%</span>
-                      </div>
-                    </div>
-                    <div class="vertical-card-footer">
-                      <button type="button" class="btn btn-primary add-btn my-4 mx-2">
-                        <i class="fas fa-shopping-cart mr-2"></i>
-                        Add to Cart
-                      </button>
-                    </div>
-                </div>
-                <div class="vertical-card-wrapper">
-                    <div class="vertical-card-image-wrapper">
-                      <img
-                        class="responsive-image"
-                        src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300whttps://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300w"
-                        alt="Keyboard image"
-                      />
-                    </div>
-                    <div class="vertical-card-header">
-                      <h2 class="m-2">Compact Keyboards</h2>
-                    </div>
-                    <div class="vertical-card-body my-4 mx-2">
-                      <div class="vertical-card-price-wrapper mt-2">
-                        <div class="mb-4">
-                          <span class="product-discount-price">Rs. 7,999.00</span>
-                          <span class="product-original-price ml-5">Rs. 9,438.82</span>
-                        </div>
-                        <span class="product-discount">Save 18%</span>
-                      </div>
-                    </div>
-                    <div class="vertical-card-footer">
-                      <button type="button" class="btn btn-primary add-btn my-4 mx-2">
-                        <i class="fas fa-shopping-cart mr-2"></i>
-                        Add to Cart
-                      </button>
-                    </div>
-                </div>
-                <div class="vertical-card-wrapper">
-                    <div class="vertical-card-image-wrapper">
-                      <img
-                        class="responsive-image"
-                        src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300whttps://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300w"
-                        alt="Keyboard image"
-                      />
-                    </div>
-                    <div class="vertical-card-header">
-                      <h2 class="m-2">Compact Keyboards</h2>
-                    </div>
-                    <div class="vertical-card-body my-4 mx-2">
-                      <div class="vertical-card-price-wrapper mt-2">
-                        <div class="mb-4">
-                          <span class="product-discount-price">Rs. 7,999.00</span>
-                          <span class="product-original-price ml-5">Rs. 9,438.82</span>
-                        </div>
-                        <span class="product-discount">Save 18%</span>
-                      </div>
-                    </div>
-                    <div class="vertical-card-footer">
-                      <button type="button" class="btn btn-primary add-btn my-4 mx-2">
-                        <i class="fas fa-shopping-cart mr-2"></i>
-                        Add to Cart
-                      </button>
-                    </div>
-                </div>
-                <div class="vertical-card-wrapper">
-                    <div class="vertical-card-image-wrapper">
-                      <img
-                        class="responsive-image"
-                        src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300whttps://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300w"
-                        alt="Keyboard image"
-                      />
-                    </div>
-                    <div class="vertical-card-header">
-                      <h2 class="m-2">Compact Keyboards</h2>
-                    </div>
-                    <div class="vertical-card-body my-4 mx-2">
-                      <div class="vertical-card-price-wrapper mt-2">
-                        <div class="mb-4">
-                          <span class="product-discount-price">Rs. 7,999.00</span>
-                          <span class="product-original-price ml-5">Rs. 9,438.82</span>
-                        </div>
-                        <span class="product-discount">Save 18%</span>
-                      </div>
-                    </div>
-                    <div class="vertical-card-footer">
-                      <button type="button" class="btn btn-primary add-btn my-4 mx-2">
-                        <i class="fas fa-shopping-cart mr-2"></i>
-                        Add to Cart
-                      </button>
-                    </div>
-                </div>
-                <div class="vertical-card-wrapper">
-                    <div class="vertical-card-image-wrapper">
-                      <img
-                        class="responsive-image"
-                        src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300whttps://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300w"
-                        alt="Keyboard image"
-                      />
-                    </div>
-                    <div class="vertical-card-header">
-                      <h2 class="m-2">Compact Keyboards</h2>
-                    </div>
-                    <div class="vertical-card-body my-4 mx-2">
-                      <div class="vertical-card-price-wrapper mt-2">
-                        <div class="mb-4">
-                          <span class="product-discount-price">Rs. 7,999.00</span>
-                          <span class="product-original-price ml-5">Rs. 9,438.82</span>
-                        </div>
-                        <span class="product-discount">Save 18%</span>
-                      </div>
-                    </div>
-                    <div class="vertical-card-footer">
-                      <button type="button" class="btn btn-primary add-btn my-4 mx-2">
-                        <i class="fas fa-shopping-cart mr-2"></i>
-                        Add to Cart
-                      </button>
-                    </div>
-                </div>
-                <div class="vertical-card-wrapper">
-                    <div class="vertical-card-image-wrapper">
-                      <img
-                        class="responsive-image"
-                        src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300whttps://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300w"
-                        alt="Keyboard image"
-                      />
-                    </div>
-                    <div class="vertical-card-header">
-                      <h2 class="m-2">Compact Keyboards</h2>
-                    </div>
-                    <div class="vertical-card-body my-4 mx-2">
-                      <div class="vertical-card-price-wrapper mt-2">
-                        <div class="mb-4">
-                          <span class="product-discount-price">Rs. 7,999.00</span>
-                          <span class="product-original-price ml-5">Rs. 9,438.82</span>
-                        </div>
-                        <span class="product-discount">Save 18%</span>
-                      </div>
-                    </div>
-                    <div class="vertical-card-footer">
-                      <button type="button" class="btn btn-primary add-btn my-4 mx-2">
-                        <i class="fas fa-shopping-cart mr-2"></i>
-                        Add to Cart
-                      </button>
-                    </div>
-                </div>
-                <div class="vertical-card-wrapper">
-                    <div class="vertical-card-image-wrapper">
-                      <img
-                        class="responsive-image"
-                        src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300whttps://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300w"
-                        alt="Keyboard image"
-                      />
-                    </div>
-                    <div class="vertical-card-header">
-                      <h2 class="m-2">Compact Keyboards</h2>
-                    </div>
-                    <div class="vertical-card-body my-4 mx-2">
-                      <div class="vertical-card-price-wrapper mt-2">
-                        <div class="mb-4">
-                          <span class="product-discount-price">Rs. 7,999.00</span>
-                          <span class="product-original-price ml-5">Rs. 9,438.82</span>
-                        </div>
-                        <span class="product-discount">Save 18%</span>
-                      </div>
-                    </div>
-                    <div class="vertical-card-footer">
-                      <button type="button" class="btn btn-primary add-btn my-4 mx-2">
-                        <i class="fas fa-shopping-cart mr-2"></i>
-                        Add to Cart
-                      </button>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <!-- Navbar -->
+  <header class="header">
+    <div class="header-wrapper mt-2 ml-4">
+      <!-- <img class="logo" src="#" alt="" /> -->
+      <h6>
+        <a class="header-heading" href="#">Meck Store</a>
+      </h6>
+    </div>
+    <div class="header__nav">
+      <nav>
+        <ul class="flex flexAlignItemsCenter">
+          <li>
+            <button type="button" class="btn btn-dark my-2 p-2 fs-6">
+              Login
+            </button>
+          </li>
+          <li>
+            <a class="social-icons-wrapper pos-rel" href="#">
+              <i class="fas fa-heart"></i>
+              <span class="badge-count icon-count-sm">8</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-icons-wrapper pos-rel" href="#">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge-count icon-count-sm">8</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="store-section flex">
+    <section class="store-filter">
+      <div class="filter-header flex flexAlignContentCenter flexJustifyBetween">
+        <h3 class="filter-heading">Filters</h3>
+        <button type="button" class="btn btn-outline-dark clear-btn">
+          Clear
+        </button>
+      </div>
+      <div class="filter-price my-5">
+        <h3 class="filter-heading">Price</h3>
+        <input class="filter-slider my-4" type="range" min="1" max="100" value="50" />
+      </div>
+      <div class="filter-category">
+        <h3 class="filter-heading">Category</h3>
+        <form action="#">
+          <input class="my-3 mr-2" type="checkbox" id="keyboard1" name="keyboard" value="StandardKeyboard" />
+          <label for="keyboard1"> Standard Keyboard</label><br />
+          <input class="my-3 mr-2" type="checkbox" id="keyboard2" name="keyboard" value="SplitKeyboard" />
+          <label for="keyboard2"> Split Keyboard</label><br />
+          <input class="my-3 mr-2" type="checkbox" id="keyboard3" name="keyboard" value="CustomKeyboard" />
+          <label for="keyboard3"> Custom Keyboard</label><br /><br />
+        </form>
+      </div>
+      <div class="filter-rating">
+        <h3 class="filter-heading">Rating</h3>
+        <form action="#">
+          <input class="my-3 mr-2" type="radio" id="rating1" name="rating" value="4starandabove" />
+          <label for="rating1">4 Stars & above</label><br />
+          <input class="my-3 mr-2" type="radio" id="rating2" name="rating" value="3starandabove" />
+          <label for="rating2">3 Stars & above</label><br />
+          <input class="mt-2 mr-2" type="radio" id="rating3" name="rating" value="2starandabove" />
+          <label for="rating3">2 Stars & above</label><br /><br />
+          <input class="mr-2" type="radio" id="rating4" name="rating" value="1starandabove" />
+          <label for="rating4">1 Stars & above</label><br /><br />
+        </form>
+      </div>
+      <div class="filter-sort-by">
+        <h3 class="filter-heading">Rating</h3>
+        <form action="#">
+          <input class="my-3 mr-2" type="radio" id="price-sort-1" name="sortby" value="lowtohigh" />
+          <label for="price-sort-1">Price - Low to High</label><br />
+          <input class="my-3 mr-2" type="radio" id="price-sort-2" name="sortby" value="hightolow" />
+          <label for="price-sort-2">Price - High to Low</label><br />
+        </form>
+      </div>
     </section>
+    <section class="store-product">
+      <div class="product-header">
+        <h3 class="product-heading">
+          Showing All Products <small>( Showing 09 products )</small>
+        </h3>
+      </div>
+      <div class="product-card-wrapper flex flexWrap flexJustifyCenter">
+        <div class="vertical-card-wrapper">
+          <div class="vertical-card-image-wrapper">
+            <img class="responsive-image" src="../assets/keyboard-1.jpg" alt="Keyboard image" />
+          </div>
+          <div class="vertical-card-header">
+            <h2 class="my-3 mx-3">Cyber Moon Keyboard</h2>
+          </div>
+          <div class="vertical-card-body my-4 mx-2">
+            <div class="vertical-card-price-wrapper mt-2">
+              <div class="mb-4 mx-2">
+                <span class="product-discount-price">Rs. 26,296.63</span>
+              </div>
+            </div>
+          </div>
+          <div class="vertical-card-footer">
+            <button type="button" class="btn btn-primary add-btn my-4 mx-2">
+              <i class="fas fa-shopping-cart mr-2"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="vertical-card-wrapper">
+          <div class="vertical-card-image-wrapper">
+            <img class="responsive-image"
+              src="../assets/keyboard-2.jpg" />
+          </div>
+          <div class="vertical-card-header">
+            <h2 class="my-3 mx-3">Hot-Swappable Keyboard</h2>
+          </div>
+          <div class="vertical-card-body my-4 mx-2">
+            <div class="vertical-card-price-wrapper mt-2">
+              <div class="mb-4 mx-2">
+                <span class="product-discount-price">Rs. 25,296.63</span>
+              </div>
+            </div>
+          </div>
+          <div class="vertical-card-footer">
+            <button type="button" class="btn btn-primary add-btn my-4 mx-2">
+              <i class="fas fa-shopping-cart mr-2"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="vertical-card-wrapper">
+          <div class="vertical-card-image-wrapper">
+            <img class="responsive-image"
+              src="../assets/keyboard-3.jpg"
+              alt="Keyboard image" />
+          </div>
+          <div class="vertical-card-header">
+            <h2 class="my-3 mx-3">Keychron K2 Keyboard</h2>
+          </div>
+          <div class="vertical-card-body my-4 mx-2">
+            <div class="vertical-card-price-wrapper mt-2">
+              <div class="mb-4 mx-2">
+                <span class="product-discount-price">Rs. 8,299.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="vertical-card-footer">
+            <button type="button" class="btn btn-primary add-btn my-4 mx-2">
+              <i class="fas fa-shopping-cart mr-2"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="vertical-card-wrapper">
+          <div class="vertical-card-image-wrapper">
+            <img class="responsive-image"
+              src="../assets/keyboard-4.jpg"
+              alt="Keyboard image" />
+          </div>
+          <div class="vertical-card-header">
+            <h2 class="my-3 mx-3">Purple Midnight Keyboard</h2>
+          </div>
+          <div class="vertical-card-body my-4 mx-2">
+            <div class="vertical-card-price-wrapper mt-2">
+              <div class="mb-4 mx-2">
+                <span class="product-discount-price">Rs. 20,199.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="vertical-card-footer">
+            <button type="button" class="btn btn-primary add-btn my-4 mx-2">
+              <i class="fas fa-shopping-cart mr-2"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="vertical-card-wrapper">
+          <div class="vertical-card-image-wrapper">
+            <img class="responsive-image"
+              src="../assets/keyboard-5.jpg"
+              alt="Keyboard image" />
+          </div>
+          <div class="vertical-card-header">
+            <h2 class="my-3 mx-3">Mechanical Keyboards</h2>
+          </div>
+          <div class="vertical-card-body my-4 mx-2">
+            <div class="vertical-card-price-wrapper mt-2">
+              <div class="mb-4 mx-2">
+                <span class="product-discount-price">Rs. 18,999.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="vertical-card-footer">
+            <button type="button" class="btn btn-primary add-btn my-4 mx-2">
+              <i class="fas fa-shopping-cart mr-2"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="vertical-card-wrapper">
+          <div class="vertical-card-image-wrapper">
+            <img class="responsive-image"
+              src="../assets/keyboard-6.jpg"
+              alt="Keyboard image" />
+          </div>
+          <div class="vertical-card-header">
+            <h2 class="my-3 mx-3">Preonic Keyboard MX Kit</h2>
+          </div>
+          <div class="vertical-card-body my-4 mx-2">
+            <div class="vertical-card-price-wrapper mt-2">
+              <div class="mb-4 mx-2">
+                <span class="product-discount-price">Rs. 25,499.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="vertical-card-footer">
+            <button type="button" class="btn btn-primary add-btn my-4 mx-2">
+              <i class="fas fa-shopping-cart mr-2"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="vertical-card-wrapper">
+          <div class="vertical-card-image-wrapper">
+            <img class="responsive-image"
+              src="../assets/keyboard-7.jpg"
+              alt="Keyboard image" />
+          </div>
+          <div class="vertical-card-header">
+            <h2 class="my-3 mx-3">Islay Night Keyboard</h2>
+          </div>
+          <div class="vertical-card-body my-4 mx-2">
+            <div class="vertical-card-price-wrapper mt-2">
+              <div class="mb-4 mx-2">
+                <span class="product-discount-price">Rs. 28,599.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="vertical-card-footer">
+            <button type="button" class="btn btn-primary add-btn my-4 mx-2">
+              <i class="fas fa-shopping-cart mr-2"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="vertical-card-wrapper">
+          <div class="vertical-card-image-wrapper">
+            <img class="responsive-image"
+              src="../assets/keyboard-8.jpg"
+              alt="Keyboard image" />
+          </div>
+          <div class="vertical-card-header">
+            <h2 class="my-3 mx-3">Zodiac Keyboard</h2>
+          </div>
+          <div class="vertical-card-body my-4 mx-2">
+            <div class="vertical-card-price-wrapper mt-2">
+              <div class="mb-4 mx-2">
+                <span class="product-discount-price">Rs. 26,999.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="vertical-card-footer">
+            <button type="button" class="btn btn-primary add-btn my-4 mx-2">
+              <i class="fas fa-shopping-cart mr-2"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="vertical-card-wrapper">
+          <div class="vertical-card-image-wrapper">
+            <img class="responsive-image"
+              src="../assets/keyboard-9.jpg"
+              alt="Keyboard image" />
+          </div>
+          <div class="vertical-card-header">
+            <h2 class="my-3 mx-3">Split Keyboard</h2>
+          </div>
+          <div class="vertical-card-body my-4 mx-2">
+            <div class="vertical-card-price-wrapper mt-2">
+              <div class="mb-4 mx-2">
+                <span class="product-discount-price">Rs. 26,296.63</span>
+              </div>
+            </div>
+          </div>
+          <div class="vertical-card-footer">
+            <button type="button" class="btn btn-primary add-btn my-4 mx-2">
+              <i class="fas fa-shopping-cart mr-2"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
 </body>
+
 </html>
