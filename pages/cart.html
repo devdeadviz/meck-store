@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Kuldeep Gupta" />
+  <meta name="description" content="Meck Store is a mechanical keyboards store." />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/components.css" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/typography.css" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/flex.css" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/margin.css" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/padding.css" />
+  <link rel="stylesheet" href="../styles/cart.css" />
+  <title>Meck Store | Cart</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="header">
+    <div class="header-wrapper mt-2 ml-4">
+      <!-- <img class="logo" src="#" alt="" /> -->
+      <h6>
+        <a class="header-heading" href="#">Meck Store</a>
+      </h6>
+    </div>
+    <div class="header__nav">
+      <nav>
+        <ul class="flex flexAlignItemsCenter">
+          <li>
+            <button type="button" class="btn btn-dark my-2 p-2 fs-6">
+              Login
+            </button>
+          </li>
+          <li>
+            <a class="social-icons-wrapper pos-rel" href="#">
+              <i class="fas fa-heart"></i>
+              <span class="badge-count icon-count-sm">8</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-icons-wrapper pos-rel" href="#">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge-count icon-count-sm">8</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <h1 class="cart-heading text-center">MY CART (2)</h1>
+  <section class="cart-card-wrapper flex flexWrap flexJustifyCenter mx-4">
+    <div class="horizontal-card-wrapper box-shadow flex">
+      <div class="horizontal-card-image-wrapper flex flexAlignItemsCenter">
+        <img class="responsive-image px-2"
+          src="https://i0.wp.com/keychron.in/wp-content/uploads/2021/12/Keychron-K6-hot-swappable-compact-65-percent-wireless-mechanical-keyboard-for-Mac-Windows-iOS-Gateron-switch-blue-with-type-C-RGB-white-backlight_3d876bd9-1dbb-468f-b0de-6d6a2c98e2ba_1800x1800.jpg?resize=900%2C900&ssl=1"
+          alt="cloth image" />
+      </div>
+      <div class="card-body-wrapper flex flexCol">
+        <div class="horizontal-card-header">
+          <h2 class="my-3 mx-4">Keychron K6</h2>
+        </div>
+        <div class="horizontal-card-price-wrapper flex flexCol my-4 mx-4">
+          <div>
+            <span class="product-discount-price">Rs. 7,999.00</span>
+            <span class="product-original-price mx-4">Rs. 8,699.00</span>
+          </div>
+          <span class="product-discount mt-4">Save 18%</span>
+          <div class="product-quantity flex flexAlignItemsCenter my-2">
+            <p>Quantity:</p>
+            <div class="quantity-btn flex">
+              <i class="fas fa-minus"></i>
+              <input type="number" class="quantity-input" value="1" />
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+        </div>
+        <div class="horizontal-card-footer my-1 mx-4">
+          <button type="button" class="btn btn-primary add-btn">
+            <i class="fas fa-shopping-cart mr-2"></i>
+            Remove from Cart
+          </button>
+          <button type="button" class="btn btn-outline-primary wishlist-btn mt-4">
+            <i class="fas fa-heart mr-2"></i>
+            Move to Wishlist
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="vertical-card-wrapper">
+      <div class="vertical-card-header">
+        <h2 class="m-4">PRICE DETAILS</h2>
+      </div>
+      <hr class="mx-4" />
+      <div class="vertical-card-body m-4">
+        <div class="flex flexJustifyBetween mt-3">
+          <span>Price(2 items)</span>
+          <span>Rs. 17,399</span>
+        </div>
+        <div class="flex flexJustifyBetween mt-3">
+          <span>Discount</span>
+          <span>- Rs. 1,400</span>
+        </div>
+        <div class="flex flexJustifyBetween my-3">
+          <span>Delivery Charges</span>
+          <span>Rs. 499</span>
+        </div>
+        <hr />
+        <div class="vertical-card-price-wrapper my-4">
+          <div class="flex flexJustifyBetween mb-4">
+            <span class="product-discount-price">TOTAL AMOUNT</span>
+            <span class="ml-5">Rs. 16,499</span>
+          </div>
+        </div>
+      </div>
+      <hr class="mx-4" />
+      <div class="vertical-card-footer">
+        <p class="m-4">You will save Rs. 1,400 on this order</p>
+        <button type="button" class="btn btn-primary add-btn">
+          PLACE ORDER
+        </button>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
