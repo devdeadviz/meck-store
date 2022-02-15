@@ -1,0 +1,108 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --wishlist-icon-color: #ff0000;
+}
+
+body {
+  color: var(--primary-color);
+  font-family: "Merriweather", serif;
+  scroll-behavior: smooth;
+}
+
+/* Login Button Style */
+
+.btn-dark:hover {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.icon-count-sm {
+  top: -0.7rem;
+  left: 2.8rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+/* Cart Heading Styles */
+
+.cart-heading {
+  padding: 7rem 0 1rem 0;
+}
+
+/* Card styles */
+
+.vertical-card-wrapper {
+  height: fit-content;
+  width: 22rem;
+  border-radius: 10px;
+  box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.19);
+  margin: 1rem;
+  transition: 0.4s ease-in;
+}
+
+.vertical-card-wrapper:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.vertical-card-header > h2 {
+  font-size: 1.5rem;
+}
+
+.add-btn {
+  font-size: 0.9rem;
+}
+
+/* Horizontal card styles */
+
+.horizontal-card-wrapper {
+  width: 40rem;
+  height: fit-content;
+  margin: 1rem;
+  transition: 0.4s ease-in;
+}
+
+.horizontal-card-header > h2 {
+  font-size: 1.5rem;
+}
+
+.horizontal-card-wrapper:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.horizontal-card-image-wrapper > .responsive-image {
+  max-width: 20rem;
+}
+
+/* Wishlist Button Styles */
+
+.wishlist-btn {
+  font-size: 0.9rem;
+}
+
+.wishlist-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+/* Quantity Section Styles */
+
+.quantity-btn {
+  width: fit-content;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  margin: 0.5rem 1rem;
+}
+
+.quantity-btn > i {
+  padding: 1rem;
+}
+
+.quantity-btn > input {
+  border: none;
+  padding: 1rem;
+  width: 4rem;
+}
