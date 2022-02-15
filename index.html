@@ -1,293 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="Kuldeep Gupta" />
-    <meta
-      name="description"
-      content="Meck Store is a mechanical keyboards store."
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://arcui.netlify.app/styles/components.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://arcui.netlify.app/styles/typography.css"
-    />
-    <link rel="stylesheet" href="https://arcui.netlify.app/styles/flex.css" />
-    <link rel="stylesheet" href="https://arcui.netlify.app/styles/margin.css" />
-    <link
-      rel="stylesheet"
-      href="https://arcui.netlify.app/styles/padding.css"
-    />
-    <link rel="stylesheet" href="./styles/index.css" />
-    <title>Meck Store</title>
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <header class="header">
-      <div class="header-wrapper mt-2 ml-4">
-        <!-- <img class="logo" src="#" alt="" /> -->
-        <h6>
-          <a class="header-heading" href="#">Meck Store</a>
-        </h6>
-      </div>
-      <div class="header__nav">
-        <nav>
-          <ul class="flex flexAlignItemsCenter">
-            <li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="Kuldeep Gupta" />
+  <meta name="description" content="Meck Store is a mechanical keyboards store." />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/components.css" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/typography.css" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/flex.css" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/margin.css" />
+  <link rel="stylesheet" href="https://arcui.netlify.app/styles/padding.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <title>Meck Store</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="header">
+    <div class="header-wrapper mt-2 ml-4">
+      <!-- <img class="logo" src="#" alt="" /> -->
+      <h6>
+        <a class="header-heading" href="./index.html">Meck Store</a>
+      </h6>
+    </div>
+    <div class="header__nav">
+      <nav>
+        <ul class="flex flexAlignItemsCenter">
+          <li>
+            <a href="./pages/login.html">
               <button type="button" class="btn btn-dark my-2 p-2 fs-6">
                 Login
               </button>
-            </li>
-            <li>
-              <a class="social-icons-wrapper pos-rel" href="#">
-                <i class="fas fa-heart"></i>
-                <span class="badge-count icon-count-sm">8</span>
-              </a>
-            </li>
-            <li>
-              <a class="social-icons-wrapper pos-rel" href="#">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="badge-count icon-count-sm">8</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+            </a>
+          </li>
+          <li>
+            <a class="social-icons-wrapper pos-rel" href="./pages/wishlist.html">
+              <i class="fas fa-heart"></i>
+              <span class="badge-count icon-count-sm">8</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-icons-wrapper pos-rel" href="./pages/cart.html">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge-count icon-count-sm">8</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Image Carousel -->
+  <div class="image-carousel">
+    <div class="store-image-wrapper">
+      <img class="store-image" src="https://www.meckeys.com/wp-content/uploads/2021/11/Ducky-white-pudding-9.jpg"
+        alt="Main Image" />
+    </div>
+    <div class="store-image-wrapper">
+      <img class="store-image"
+        src="https://images.unsplash.com/photo-1595225476474-87563907a212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+        alt="Main Image" />
+    </div>
+    <div class="store-image-wrapper">
+      <img class="store-image"
+        src="https://images.unsplash.com/photo-1615869442320-fd02a129c77c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1034&q=80" />
+    </div>
+    <div class="store-image-content flex flexCol">
+      <h1>Meck Store</h1>
+      <button type="button" class="btn btn-primary m-2">Explore More</button>
+    </div>
+  </div>
+  <!-- Cards -->
+  <h1 class="store-heading text-center">CATEGORIES</h1>
+  <div class="store-cards-wrapper flex flexWrap flexJustifyCenter m-5">
+    <div class="vertical-card-wrapper m-5">
+      <div class="vertical-card-image-wrapper pos-rel">
+        <img class="responsive-image"
+          src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296895-1TLQSVAHTVXF5EPTJA5H/epbt_abs-doubleshot-keycaps_olivetti.jpg?format=750w"
+          alt="Keyboard image" />
+        <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
       </div>
-    </header>
-    <!-- Image Carousel -->
-    <div class="image-carousel">
-      <div class="store-image-wrapper">
-        <img
-          class="store-image"
-          src="https://www.meckeys.com/wp-content/uploads/2021/11/Ducky-white-pudding-9.jpg"
-          alt="Main Image"
-        />
-      </div>
-      <div class="store-image-wrapper">
-        <img
-          class="store-image"
-          src="https://images.unsplash.com/photo-1595225476474-87563907a212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
-          alt="Main Image"
-        />
-      </div>
-      <div class="store-image-wrapper">
-        <img
-          class="store-image"
-          src="https://images.unsplash.com/photo-1615869442320-fd02a129c77c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1034&q=80"
-        />
-      </div>
-      <div class="store-image-content flex flexCol">
-        <h1>Meck Store</h1>
-        <button type="button" class="btn btn-primary m-2">Explore More</button>
+      <div class="vertical-card-header">
+        <h2 class="m-2 py-3">Standard Keyboards</h2>
       </div>
     </div>
-    <!-- Cards -->
-    <h1 class="store-heading text-center">CATEGORIES</h1>
-    <div class="store-cards-wrapper flex flexWrap flexJustifyCenter m-5">
-      <div class="vertical-card-wrapper m-5">
-        <div class="vertical-card-image-wrapper pos-rel">
-          <img
-            class="responsive-image"
-            src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296895-1TLQSVAHTVXF5EPTJA5H/epbt_abs-doubleshot-keycaps_olivetti.jpg?format=750w"
-            alt="Keyboard image"
-          />
-          <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
-        </div>
-        <div class="vertical-card-header">
-          <h2 class="m-2 py-3">Standard Keyboards</h2>
-        </div>
+    <div class="vertical-card-wrapper m-5">
+      <div class="vertical-card-image-wrapper pos-rel">
+        <img class="responsive-image"
+          src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296885-YJF9K6IA8YJDZA0Q6Y2M/tkc_godspeed75_keyboard_75-percent_1200.jpg?format=300w"
+          alt="Keyboard image" />
+        <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
       </div>
-      <div class="vertical-card-wrapper m-5">
-        <div class="vertical-card-image-wrapper pos-rel">
-          <img
-            class="responsive-image"
-            src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296885-YJF9K6IA8YJDZA0Q6Y2M/tkc_godspeed75_keyboard_75-percent_1200.jpg?format=300w"
-            alt="Keyboard image"
-          />
-          <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
-        </div>
-        <div class="vertical-card-header">
-          <h2 class="m-2 py-3">Short Keyborads</h2>
-        </div>
-      </div>
-      <div class="vertical-card-wrapper m-5">
-        <div class="vertical-card-image-wrapper pos-rel">
-          <img
-            class="responsive-image"
-            src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300whttps://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300w"
-            alt="Keyboard image"
-          />
-          <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
-        </div>
-        <div class="vertical-card-header">
-          <h2 class="m-2 py-3">Compact Keyboards</h2>
-        </div>
-      </div>
-      <div class="vertical-card-wrapper m-5">
-        <div class="vertical-card-image-wrapper pos-rel">
-          <img
-            class="responsive-image"
-            src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296892-8ABQBYHMJ4BFSYOV0O8W/Infinikey-Graen_minivan_overhead_1920x1080.jpg?format=300w"
-            alt="Keyboard image"
-          />
-          <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
-        </div>
-        <div class="vertical-card-header">
-          <h2 class="m-2 py-3">Custom Keyboards</h2>
-        </div>
-      </div>
-      <div class="vertical-card-wrapper m-5">
-        <div class="vertical-card-image-wrapper pos-rel">
-          <img
-            class="responsive-image"
-            src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296918-JG32PS2HTJR94Z9X1U0P/Infinikey-LedZep_OSA-grey-wood.jpg?format=300w"
-            alt="Keyboard image"
-          />
-          <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
-        </div>
-        <div class="vertical-card-header">
-          <h2 class="m-2 py-3">Split Keyboards</h2>
-        </div>
-      </div>
-      <div class="vertical-card-wrapper m-5">
-        <div class="vertical-card-image-wrapper pos-rel">
-          <img
-            class="responsive-image"
-            src="https://www.meckeys.com/wp-content/uploads/2020/07/VA21MPanda1-min-262x175.jpg"
-            alt="Keyboard image"
-          />
-          <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
-        </div>
-        <div class="vertical-card-header">
-          <h2 class="m-2 py-3">Numpad</h2>
-        </div>
-      </div>
-      <div class="vertical-card-wrapper m-5">
-        <div class="vertical-card-image-wrapper pos-rel">
-          <img
-            class="responsive-image"
-            src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296910-V11VAGL6OJKWA2XDD4JY/infinikey-aether_Candybar-red.png?format=500whttps://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296910-V11VAGL6OJKWA2XDD4JY/infinikey-aether_Candybar-red.png?format=500w"
-            alt="Keyboard image"
-          />
-          <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
-        </div>
-        <div class="vertical-card-header">
-          <h2 class="m-2 py-3">CandyBar Premium</h2>
-        </div>
-      </div>
-      <div class="vertical-card-wrapper m-5">
-        <div class="vertical-card-image-wrapper pos-rel">
-          <img
-            class="responsive-image"
-            src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296914-5T9P5H87W1ZZ7FSFAO6Z/qlavier_ortho_mintlodica.jpg?format=300w"
-            alt="Keyboard image"
-          />
-          <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
-        </div>
-        <div class="vertical-card-header">
-          <h2 class="m-2 py-3">Ortho Boards</h2>
-        </div>
+      <div class="vertical-card-header">
+        <h2 class="m-2 py-3">Short Keyborads</h2>
       </div>
     </div>
-    <h1 class="store-heading text-center">UPCOMINGS</h1>
-    <div class="store-cards-wrapper flex flexWrap flexJustifyAround m-5">
-      <div class="horizontal-card-wrapper flex m-5">
-        <div class="horizontal-card-image-wrapper flex flexAlignItemsCenter">
-          <img
-            class="responsive-image px-2"
-            src="https://www.meckeys.com/wp-content/uploads/2021/08/K2%E5%8F%AF%E6%8F%92%E6%8B%94%E9%93%9D%E5%90%88%E9%87%91-min-262x175.jpg"
-            alt="cloth image"
-          />
-        </div>
-        <div class="card-body-wrapper flex flexCol">
-          <div class="horizontal-card-header">
-            <h2 class="my-3 mx-4">Keychron K2</h2>
-            <small class="my-2 mx-4">(HOT-SWAPPABLE)</small>
-            <div class="simple-rating-wrapper flex mx-4">
-              <div class="mt-3 mr-2">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="horizontal-card-price-wrapper flex flexCol mt-4 mb-2 mx-4"
-          >
-            <div>
-              <span class="product-discount-price">Rs. 7,699.00</span>
-            </div>
-          </div>
-          <div class="horizontal-card-footer mx-5 mb-5">
-            <button
-              type="button"
-              class="btn btn-outline-primary wishlist-btn mt-4"
-            >
-              <i class="fas fa-bell mr-2"></i>
-              Get Notified
-            </button>
-          </div>
-        </div>
+    <div class="vertical-card-wrapper m-5">
+      <div class="vertical-card-image-wrapper pos-rel">
+        <img class="responsive-image"
+          src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300whttps://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296888-66OU4S7N2WDSFNMU49D2/Portico_DSA-Magic-Girl_overhead.jpg?format=300w"
+          alt="Keyboard image" />
+        <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
       </div>
-      <div class="horizontal-card-wrapper flex m-5">
-        <div class="horizontal-card-image-wrapper flex flexAlignItemsCenter">
-          <img
-            class="responsive-image px-2"
-            src="https://www.meckeys.com/wp-content/uploads/2021/03/K2-ALUM_RGB-262x175.jpeg"
-            alt="cloth image"
-          />
+      <div class="vertical-card-header">
+        <h2 class="m-2 py-3">Compact Keyboards</h2>
+      </div>
+    </div>
+    <div class="vertical-card-wrapper m-5">
+      <div class="vertical-card-image-wrapper pos-rel">
+        <img class="responsive-image"
+          src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296892-8ABQBYHMJ4BFSYOV0O8W/Infinikey-Graen_minivan_overhead_1920x1080.jpg?format=300w"
+          alt="Keyboard image" />
+        <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
+      </div>
+      <div class="vertical-card-header">
+        <h2 class="m-2 py-3">Custom Keyboards</h2>
+      </div>
+    </div>
+    <div class="vertical-card-wrapper m-5">
+      <div class="vertical-card-image-wrapper pos-rel">
+        <img class="responsive-image"
+          src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296918-JG32PS2HTJR94Z9X1U0P/Infinikey-LedZep_OSA-grey-wood.jpg?format=300w"
+          alt="Keyboard image" />
+        <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
+      </div>
+      <div class="vertical-card-header">
+        <h2 class="m-2 py-3">Split Keyboards</h2>
+      </div>
+    </div>
+    <div class="vertical-card-wrapper m-5">
+      <div class="vertical-card-image-wrapper pos-rel">
+        <img class="responsive-image"
+          src="https://www.meckeys.com/wp-content/uploads/2020/07/VA21MPanda1-min-262x175.jpg" alt="Keyboard image" />
+        <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
+      </div>
+      <div class="vertical-card-header">
+        <h2 class="m-2 py-3">Numpad</h2>
+      </div>
+    </div>
+    <div class="vertical-card-wrapper m-5">
+      <div class="vertical-card-image-wrapper pos-rel">
+        <img class="responsive-image"
+          src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296910-V11VAGL6OJKWA2XDD4JY/infinikey-aether_Candybar-red.png?format=500whttps://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296910-V11VAGL6OJKWA2XDD4JY/infinikey-aether_Candybar-red.png?format=500w"
+          alt="Keyboard image" />
+        <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
+      </div>
+      <div class="vertical-card-header">
+        <h2 class="m-2 py-3">CandyBar Premium</h2>
+      </div>
+    </div>
+    <div class="vertical-card-wrapper m-5">
+      <div class="vertical-card-image-wrapper pos-rel">
+        <img class="responsive-image"
+          src="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879296914-5T9P5H87W1ZZ7FSFAO6Z/qlavier_ortho_mintlodica.jpg?format=300w"
+          alt="Keyboard image" />
+        <div class="vertical-card-badge-wrapper py-1 px-4">New</div>
+      </div>
+      <div class="vertical-card-header">
+        <h2 class="m-2 py-3">Ortho Boards</h2>
+      </div>
+    </div>
+  </div>
+  <h1 class="store-heading text-center">UPCOMINGS</h1>
+  <div class="store-cards-wrapper flex flexWrap flexJustifyAround m-5">
+    <div class="horizontal-card-wrapper flex m-5">
+      <div class="horizontal-card-image-wrapper flex flexAlignItemsCenter">
+        <img class="responsive-image px-2"
+          src="https://www.meckeys.com/wp-content/uploads/2021/08/K2%E5%8F%AF%E6%8F%92%E6%8B%94%E9%93%9D%E5%90%88%E9%87%91-min-262x175.jpg"
+          alt="cloth image" />
+      </div>
+      <div class="card-body-wrapper flex flexCol">
+        <div class="horizontal-card-header">
+          <h2 class="my-3 mx-4">Keychron K2</h2>
+          <small class="my-2 mx-4">(HOT-SWAPPABLE)</small>
+          <div class="simple-rating-wrapper flex mx-4">
+            <div class="mt-3 mr-2">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+          </div>
         </div>
-        <div class="card-body-wrapper flex flexCol">
-          <div class="horizontal-card-header">
-            <h2 class="my-3 mx-4">Keychron K2</h2>
-            <div class="simple-rating-wrapper flex mx-4">
-              <div class="mr-2">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-              </div>
-            </div>
+        <div class="horizontal-card-price-wrapper flex flexCol mt-4 mb-2 mx-4">
+          <div>
+            <span class="product-discount-price">Rs. 7,699.00</span>
           </div>
-          <div class="horizontal-card-price-wrapper flex flexCol my-4 mx-5">
-            <div>
-              <span class="product-discount-price">Rs. 7,199.00</span>
-            </div>
-          </div>
-          <div class="horizontal-card-footer m-5">
-            <button
-              type="button"
-              class="btn btn-outline-primary wishlist-btn mt-4"
-            >
-              <i class="fas fa-bell mr-2"></i>
-              Get Notified
-            </button>
-          </div>
+        </div>
+        <div class="horizontal-card-footer mx-5 mb-5">
+          <button type="button" class="btn btn-outline-primary wishlist-btn mt-4">
+            <i class="fas fa-bell mr-2"></i>
+            Get Notified
+          </button>
         </div>
       </div>
     </div>
-    <footer class="store-footer text-center">
-      <p class="py-4">Build with ❤️ by <b>Kuldeep Gupta</b></p>
-    </footer>
-    <script src="./scripts/script.js" type="text/javascript"></script>
-  </body>
+    <div class="horizontal-card-wrapper flex m-5">
+      <div class="horizontal-card-image-wrapper flex flexAlignItemsCenter">
+        <img class="responsive-image px-2"
+          src="https://www.meckeys.com/wp-content/uploads/2021/03/K2-ALUM_RGB-262x175.jpeg" alt="cloth image" />
+      </div>
+      <div class="card-body-wrapper flex flexCol">
+        <div class="horizontal-card-header">
+          <h2 class="my-3 mx-4">Keychron K2</h2>
+          <div class="simple-rating-wrapper flex mx-4">
+            <div class="mr-2">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+          </div>
+        </div>
+        <div class="horizontal-card-price-wrapper flex flexCol my-4 mx-5">
+          <div>
+            <span class="product-discount-price">Rs. 7,199.00</span>
+          </div>
+        </div>
+        <div class="horizontal-card-footer m-5">
+          <button type="button" class="btn btn-outline-primary wishlist-btn mt-4">
+            <i class="fas fa-bell mr-2"></i>
+            Get Notified
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="store-footer text-center">
+    <p class="py-4">Build with ❤️ by <b>Kuldeep Gupta</b></p>
+  </footer>
+  <script src="./scripts/script.js" type="text/javascript"></script>
+</body>
+
 </html>
