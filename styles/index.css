@@ -1,0 +1,107 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+body {
+  color: var(--primary-color);
+  font-family: "Merriweather", serif;
+}
+
+.btn-dark:hover {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.icon-count-sm {
+  top: -0.7rem;
+  left: 2.8rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+.store-image-wrapper {
+  display: none;
+}
+
+.store-image {
+  width: 100%;
+  opacity: 0.8;
+  aspect-ratio: 5/3;
+}
+
+.store-image-content {
+  display: inline-block;
+  position: absolute;
+  top: 18em;
+  left: 21em;
+  right: 20em;
+  align-items: center;
+}
+
+.store-image-content h1 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.store-heading {
+  margin: 5rem 2rem;
+}
+
+.vertical-card-wrapper {
+  height: fit-content;
+  width: 22rem;
+  border-radius: 10px;
+  box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.19);
+  transition: 0.4s ease-in;
+}
+
+.vertical-card-wrapper:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.responsive-image {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  aspect-ratio: 5/3;
+}
+
+.vertical-card-badge-wrapper {
+  border-radius: 10px;
+}
+
+.add-btn {
+  font-size: 0.9rem;
+  width: 90%;
+}
+
+.horizontal-card-wrapper {
+  box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  height: fit-content;
+  transition: 0.4s ease-in;
+}
+
+.horizontal-card-wrapper:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.wishlist-btn {
+  width: 15rem;
+}
+
+.store-footer {
+  position: relative;
+  bottom: 0;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
