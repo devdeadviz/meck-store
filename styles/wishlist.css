@@ -1,0 +1,78 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --wishlist-icon-color: #ff0000;
+}
+
+body {
+  color: var(--primary-color);
+  font-family: "Merriweather", serif;
+  scroll-behavior: smooth;
+}
+
+/* Login Button Style */
+
+.btn-dark:hover {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.icon-count-sm {
+  top: -0.7rem;
+  left: 2.8rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+/* Wishlist heading styles */
+
+.wishlist-heading {
+  padding: 7rem 0 2rem 0;
+}
+
+/* Card styles */
+
+.vertical-card-wrapper {
+  height: fit-content;
+  width: 22rem;
+  border-radius: 10px;
+  box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.19);
+  margin: 1rem;
+  transition: 0.4s ease-in;
+}
+
+.vertical-card-wrapper:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.vertical-card-header > h2 {
+  font-size: 1.5rem;
+}
+
+.responsive-image {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  aspect-ratio: 5/3;
+}
+
+.add-btn {
+  font-size: 0.9rem;
+  width: 95%;
+  border-radius: 5px;
+}
+
+/* Wishlist icon style */
+
+.wishlist-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+.wishlist-icon > i {
+  font-size: 1.8rem;
+  color: var(--wishlist-icon-color);
+}
