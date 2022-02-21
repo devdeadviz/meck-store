@@ -113,3 +113,17 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+@media screen and (max-width: 1039px) {
+  
+  .store-image-content {
+    top: 12em;
+    left: 12em;
+    right: 12em;
+  }
+
+  .store-image-content h1 {
+    font-size: 3.5rem;
+  }
+  
+}
