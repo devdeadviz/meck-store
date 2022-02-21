@@ -28,7 +28,7 @@ body {
 }
 
 .icon-count-sm {
-  top: -0.7rem;
+  top: 1rem;
   left: 2.8rem;
   background-color: var(--secondary-color);
   color: var(--primary-color);
