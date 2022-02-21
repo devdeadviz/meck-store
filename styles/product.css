@@ -74,7 +74,7 @@ body {
 
 .vertical-card-wrapper {
   height: fit-content;
-  width: 22rem;
+  width: 20rem;
   border-radius: 10px;
   box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.19);
   margin: 1rem;
@@ -87,7 +87,11 @@ body {
 }
 
 .vertical-card-header > h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.product-discount-price {
+  font-size: 1.2rem;
 }
 
 .responsive-image {
