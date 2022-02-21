@@ -9,6 +9,16 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Header Icon Styles */
+
+.social-icons-wrapper {
+  text-decoration: none;
+}
+
+.social-icons-wrapper > i {
+  display: block;
+}
+
 /* login button style */
 
 .btn-dark:hover {
