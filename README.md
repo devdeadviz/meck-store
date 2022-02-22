@@ -4,7 +4,7 @@ Meck Store is an online E-commerce Store for Mechanical Keyboards.
 
 ## Demo
 
-![Homepage Screenshot](https://user-images.githubusercontent.com/54413717/153729245-288ba8ca-e547-4aa7-a201-44f79a15170f.png)
+![Project Demo Gif](./assets/ecom-demo.gif)
 
 Checkout the [Live Link](https://meck-store.netlify.app/)
 
